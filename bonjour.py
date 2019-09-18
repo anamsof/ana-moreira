@@ -8,4 +8,7 @@ aux étudiant-e-s
 ### séquence d'opérations
 print (" Bonjour !")
 print (" Bienvenue aux étudiant -e-s 2019-2020 !")
-input("")
+print ("Informatique de gestion")
+print ("1er semestre 2019-2020")
+print ("Bonjour HEG")
+input("Appuyer sur une touche pour quitter...")
