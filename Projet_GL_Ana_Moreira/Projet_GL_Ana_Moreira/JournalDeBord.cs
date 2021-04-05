@@ -13,7 +13,23 @@ namespace Projet_GL_Ana_Moreira
         public JournalDeBord()
         {
             InitializeComponent();
- 
+            
+
+        }
+        public void ShowLogin() {
+            PageLogin p = new PageLogin();
+            p.ShowDialog();
+        }
+
+        private void JournalDeBord_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnDeconnecter_Click(object sender, EventArgs e)
+        {
+            ShowLogin();
         }
 
         private void lblFav_Click(object sender, EventArgs e)
@@ -41,8 +57,10 @@ namespace Projet_GL_Ana_Moreira
 
         }
 
-        private void JournalDeBord_Load(object sender, EventArgs e)
+        private void btnRecherche_Click(object sender, EventArgs e)
         {
+            RechercheAvancé p = new RechercheAvancé();
+            p.Show();
 
         }
     }

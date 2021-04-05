@@ -49,5 +49,10 @@ namespace Projet_GL_Ana_Moreira
         {
 
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

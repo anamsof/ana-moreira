@@ -49,5 +49,16 @@ namespace Projet_GL_Ana_Moreira
         {
 
         }
+
+        private void txtFest_TextChanged(object sender, EventArgs e)
+        {
+            Focus();
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            JournalDeBord j = new JournalDeBord();
+            j.Show();
+        }
     }
 }

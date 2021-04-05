@@ -39,5 +39,10 @@ namespace Projet_GL_Ana_Moreira
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

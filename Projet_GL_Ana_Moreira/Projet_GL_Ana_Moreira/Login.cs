@@ -14,12 +14,13 @@ namespace Projet_GL_Ana_Moreira
     {
         public PageLogin(){
             InitializeComponent();
+           
         }
 
-        private void Form1_Load(object sender, EventArgs e){
-          
-
-        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        
+         }
 
         private void btnCreer_Click(object sender, EventArgs e) {
             Form cc = new CreerCompte();
@@ -37,6 +38,11 @@ namespace Projet_GL_Ana_Moreira
         }
         private void btnConnecter_Click(object sender, EventArgs e) {
             verification();
+        }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+            Focus();
         }
     }
 }

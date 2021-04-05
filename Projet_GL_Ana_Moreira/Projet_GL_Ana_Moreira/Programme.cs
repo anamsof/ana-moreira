@@ -19,5 +19,24 @@ namespace Projet_GL_Ana_Moreira
         {
 
         }
+
+        private void btnReservation_Click(object sender, EventArgs e)
+        {
+            Reservation r = new Reservation();
+            r.ShowDialog();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Payement p = new Payement();
+            p.ShowDialog();
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            JournalDeBord j = new JournalDeBord();
+            j.Show();
+        }
     }
 }

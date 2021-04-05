@@ -14,5 +14,10 @@ namespace Projet_GL_Ana_Moreira
         {
             InitializeComponent();
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
