@@ -35,8 +35,7 @@ namespace Projet_GL_Ana_Moreira
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-            JournalDeBord j = new JournalDeBord();
-            j.Show();
+            this.Close();
         }
     }
 }

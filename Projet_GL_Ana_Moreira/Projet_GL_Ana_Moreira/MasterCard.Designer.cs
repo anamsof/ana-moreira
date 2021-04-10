@@ -29,106 +29,119 @@ namespace Projet_GL_Ana_Moreira
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblIban = new System.Windows.Forms.Label();
+            this.lblBIC = new System.Windows.Forms.Label();
+            this.lblEcheance = new System.Windows.Forms.Label();
+            this.lblTexte = new System.Windows.Forms.Label();
+            this.txtIban = new System.Windows.Forms.TextBox();
+            this.txtBIC = new System.Windows.Forms.TextBox();
+            this.txtEcheance = new System.Windows.Forms.TextBox();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnConfirmer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblIban
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "IBAN";
+            this.lblIban.AutoSize = true;
+            this.lblIban.Location = new System.Drawing.Point(25, 17);
+            this.lblIban.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIban.Name = "lblIban";
+            this.lblIban.Size = new System.Drawing.Size(34, 15);
+            this.lblIban.TabIndex = 0;
+            this.lblIban.Text = "&IBAN";
             // 
-            // label3
+            // lblBIC
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 32);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "BIC";
+            this.lblBIC.AutoSize = true;
+            this.lblBIC.Location = new System.Drawing.Point(25, 55);
+            this.lblBIC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBIC.Name = "lblBIC";
+            this.lblBIC.Size = new System.Drawing.Size(25, 15);
+            this.lblBIC.TabIndex = 2;
+            this.lblBIC.Text = "&BIC";
             // 
-            // label4
+            // lblEcheance
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(391, 124);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 32);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Echeance";
+            this.lblEcheance.AutoSize = true;
+            this.lblEcheance.Location = new System.Drawing.Point(211, 58);
+            this.lblEcheance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEcheance.Name = "lblEcheance";
+            this.lblEcheance.Size = new System.Drawing.Size(57, 15);
+            this.lblEcheance.TabIndex = 4;
+            this.lblEcheance.Text = "&Echeance";
             // 
-            // label5
+            // lblTexte
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 282);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(434, 32);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "La confirmation sera envoyée par email";
+            this.lblTexte.AutoSize = true;
+            this.lblTexte.Location = new System.Drawing.Point(25, 132);
+            this.lblTexte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTexte.Name = "lblTexte";
+            this.lblTexte.Size = new System.Drawing.Size(214, 15);
+            this.lblTexte.TabIndex = 4;
+            this.lblTexte.Text = "La confirmation sera envoyée par email";
             // 
-            // textBox1
+            // txtIban
             // 
-            this.textBox1.Location = new System.Drawing.Point(160, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(551, 39);
-            this.textBox1.TabIndex = 5;
+            this.txtIban.Location = new System.Drawing.Point(86, 17);
+            this.txtIban.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txtIban.Name = "txtIban";
+            this.txtIban.Size = new System.Drawing.Size(299, 23);
+            this.txtIban.TabIndex = 1;
+            this.txtIban.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtBIC
             // 
-            this.textBox2.Location = new System.Drawing.Point(160, 117);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 39);
-            this.textBox2.TabIndex = 6;
+            this.txtBIC.Location = new System.Drawing.Point(86, 55);
+            this.txtBIC.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txtBIC.Name = "txtBIC";
+            this.txtBIC.Size = new System.Drawing.Size(110, 23);
+            this.txtBIC.TabIndex = 3;
             // 
-            // textBox3
+            // txtEcheance
             // 
-            this.textBox3.Location = new System.Drawing.Point(561, 117);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 39);
-            this.textBox3.TabIndex = 7;
+            this.txtEcheance.Location = new System.Drawing.Point(302, 55);
+            this.txtEcheance.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txtEcheance.Name = "txtEcheance";
+            this.txtEcheance.Size = new System.Drawing.Size(83, 23);
+            this.txtEcheance.TabIndex = 5;
             // 
-            // button1
+            // btnAnnuler
             // 
-            this.button1.Location = new System.Drawing.Point(561, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 46);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Annuler";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Location = new System.Drawing.Point(302, 93);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(81, 22);
+            this.btnAnnuler.TabIndex = 7;
+            this.btnAnnuler.Text = "&Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
-            // button2
+            // btnConfirmer
             // 
-            this.button2.Location = new System.Drawing.Point(391, 198);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 46);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Confirmer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Location = new System.Drawing.Point(211, 93);
+            this.btnConfirmer.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnConfirmer.Name = "btnConfirmer";
+            this.btnConfirmer.Size = new System.Drawing.Size(81, 22);
+            this.btnConfirmer.TabIndex = 6;
+            this.btnConfirmer.Text = "&Confirmer";
+            this.btnConfirmer.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Click += new System.EventHandler(this.button2_Click);
             // 
             // MasterCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 344);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(414, 161);
+            this.Controls.Add(this.btnConfirmer);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.txtEcheance);
+            this.Controls.Add(this.txtBIC);
+            this.Controls.Add(this.txtIban);
+            this.Controls.Add(this.lblTexte);
+            this.Controls.Add(this.lblEcheance);
+            this.Controls.Add(this.lblBIC);
+            this.Controls.Add(this.lblIban);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "MasterCard";
             this.Text = "MasterCard";
             this.Load += new System.EventHandler(this.MasterCard_Load);
@@ -139,14 +152,14 @@ namespace Projet_GL_Ana_Moreira
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblIban;
+        private System.Windows.Forms.Label lblBIC;
+        private System.Windows.Forms.Label lblEcheance;
+        private System.Windows.Forms.Label lblTexte;
+        private System.Windows.Forms.TextBox txtIban;
+        private System.Windows.Forms.TextBox txtBIC;
+        private System.Windows.Forms.TextBox txtEcheance;
+        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnConfirmer;
     }
 }

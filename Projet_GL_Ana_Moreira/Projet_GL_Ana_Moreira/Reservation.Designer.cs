@@ -29,11 +29,11 @@ namespace Projet_GL_Ana_Moreira
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblDescriptionRes = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.btnConfirmer = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
             this.dgvFest = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,54 +44,57 @@ namespace Projet_GL_Ana_Moreira
             ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblDescriptionRes
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Description de votre reservation";
+            this.lblDescriptionRes.AutoSize = true;
+            this.lblDescriptionRes.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescriptionRes.Location = new System.Drawing.Point(14, 17);
+            this.lblDescriptionRes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescriptionRes.Name = "lblDescriptionRes";
+            this.lblDescriptionRes.Size = new System.Drawing.Size(247, 21);
+            this.lblDescriptionRes.TabIndex = 0;
+            this.lblDescriptionRes.Text = "&Description de votre reservation";
             // 
-            // label2
+            // lblDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 213);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Date limite ";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(14, 213);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(67, 15);
+            this.lblDate.TabIndex = 3;
+            this.lblDate.Text = "D&ate limite ";
             // 
-            // dateTimePicker1
+            // dtpDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(111, 210);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(232, 23);
-            this.dateTimePicker1.TabIndex = 4;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dtpDate.Location = new System.Drawing.Point(111, 210);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(232, 23);
+            this.dtpDate.TabIndex = 4;
+            this.dtpDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // button1
+            // btnConfirmer
             // 
-            this.button1.Location = new System.Drawing.Point(818, 206);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 22);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Confirmer";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Location = new System.Drawing.Point(818, 206);
+            this.btnConfirmer.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnConfirmer.Name = "btnConfirmer";
+            this.btnConfirmer.Size = new System.Drawing.Size(81, 22);
+            this.btnConfirmer.TabIndex = 5;
+            this.btnConfirmer.Text = "&Confirmer";
+            this.btnConfirmer.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Click += new System.EventHandler(this.btnConfirmer_Click);
             // 
-            // button2
+            // btnAnnuler
             // 
-            this.button2.Location = new System.Drawing.Point(909, 206);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(81, 22);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Annuler";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Location = new System.Drawing.Point(909, 206);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(81, 22);
+            this.btnAnnuler.TabIndex = 6;
+            this.btnAnnuler.Text = "&Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // dgvFest
             // 
@@ -109,7 +112,7 @@ namespace Projet_GL_Ana_Moreira
             this.dgvFest.RowHeadersWidth = 82;
             this.dgvFest.RowTemplate.Height = 41;
             this.dgvFest.Size = new System.Drawing.Size(976, 143);
-            this.dgvFest.TabIndex = 26;
+            this.dgvFest.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -159,11 +162,11 @@ namespace Projet_GL_Ana_Moreira
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 247);
             this.Controls.Add(this.dgvFest);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnConfirmer);
+            this.Controls.Add(this.dtpDate);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.lblDescriptionRes);
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Reservation";
             this.Text = "Reservation";
@@ -175,11 +178,11 @@ namespace Projet_GL_Ana_Moreira
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblDescriptionRes;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.Button btnConfirmer;
+        private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.DataGridView dgvFest;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

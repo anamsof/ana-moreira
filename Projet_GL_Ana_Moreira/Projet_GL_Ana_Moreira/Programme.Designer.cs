@@ -31,23 +31,23 @@ namespace Projet_GL_Ana_Moreira
         {
             this.lblProgram = new System.Windows.Forms.Label();
             this.dgvFest = new System.Windows.Forms.DataGridView();
-            this.dgvGroupe = new System.Windows.Forms.DataGridView();
-            this.dgvModalité = new System.Windows.Forms.DataGridView();
-            this.Groupe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Heure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Scene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Modalité = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrixMode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAjoutFav = new System.Windows.Forms.Button();
-            this.btnReservation = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnAnnuler = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Genre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NbParticipant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvGroupe = new System.Windows.Forms.DataGridView();
+            this.Groupe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Heure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Scene = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvModalité = new System.Windows.Forms.DataGridView();
+            this.Modalité = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrixMode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAjoutFav = new System.Windows.Forms.Button();
+            this.btnReservation = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModalité)).BeginInit();
@@ -56,10 +56,11 @@ namespace Projet_GL_Ana_Moreira
             // lblProgram
             // 
             this.lblProgram.AutoSize = true;
+            this.lblProgram.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblProgram.Location = new System.Drawing.Point(14, 19);
             this.lblProgram.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblProgram.Name = "lblProgram";
-            this.lblProgram.Size = new System.Drawing.Size(129, 15);
+            this.lblProgram.Size = new System.Drawing.Size(177, 21);
             this.lblProgram.TabIndex = 0;
             this.lblProgram.Text = "&Programme du Festival";
             // 
@@ -79,114 +80,8 @@ namespace Projet_GL_Ana_Moreira
             this.dgvFest.RowHeadersWidth = 82;
             this.dgvFest.RowTemplate.Height = 41;
             this.dgvFest.Size = new System.Drawing.Size(978, 148);
-            this.dgvFest.TabIndex = 25;
+            this.dgvFest.TabIndex = 1;
             this.dgvFest.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // dgvGroupe
-            // 
-            this.dgvGroupe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGroupe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Groupe,
-            this.Heure,
-            this.Scene});
-            this.dgvGroupe.Location = new System.Drawing.Point(14, 266);
-            this.dgvGroupe.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.dgvGroupe.Name = "dgvGroupe";
-            this.dgvGroupe.RowHeadersWidth = 82;
-            this.dgvGroupe.RowTemplate.Height = 41;
-            this.dgvGroupe.Size = new System.Drawing.Size(685, 141);
-            this.dgvGroupe.TabIndex = 26;
-            // 
-            // dgvModalité
-            // 
-            this.dgvModalité.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvModalité.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Modalité,
-            this.PrixMode});
-            this.dgvModalité.Location = new System.Drawing.Point(738, 266);
-            this.dgvModalité.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.dgvModalité.Name = "dgvModalité";
-            this.dgvModalité.RowHeadersWidth = 82;
-            this.dgvModalité.RowTemplate.Height = 41;
-            this.dgvModalité.Size = new System.Drawing.Size(386, 141);
-            this.dgvModalité.TabIndex = 27;
-            // 
-            // Groupe
-            // 
-            this.Groupe.HeaderText = "Groupe";
-            this.Groupe.MinimumWidth = 8;
-            this.Groupe.Name = "Groupe";
-            this.Groupe.Width = 200;
-            // 
-            // Heure
-            // 
-            this.Heure.HeaderText = "Heure de passage";
-            this.Heure.MinimumWidth = 8;
-            this.Heure.Name = "Heure";
-            this.Heure.Width = 200;
-            // 
-            // Scene
-            // 
-            this.Scene.HeaderText = "Scene";
-            this.Scene.MinimumWidth = 8;
-            this.Scene.Name = "Scene";
-            this.Scene.Width = 200;
-            // 
-            // Modalité
-            // 
-            this.Modalité.HeaderText = "Modalité";
-            this.Modalité.MinimumWidth = 8;
-            this.Modalité.Name = "Modalité";
-            this.Modalité.Width = 200;
-            // 
-            // PrixMode
-            // 
-            this.PrixMode.HeaderText = "Prix";
-            this.PrixMode.MinimumWidth = 8;
-            this.PrixMode.Name = "PrixMode";
-            // 
-            // btnAjoutFav
-            // 
-            this.btnAjoutFav.Location = new System.Drawing.Point(1018, 49);
-            this.btnAjoutFav.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.btnAjoutFav.Name = "btnAjoutFav";
-            this.btnAjoutFav.Size = new System.Drawing.Size(106, 26);
-            this.btnAjoutFav.TabIndex = 32;
-            this.btnAjoutFav.Text = "&Ajouter favoris";
-            this.btnAjoutFav.UseVisualStyleBackColor = true;
-            // 
-            // btnReservation
-            // 
-            this.btnReservation.Location = new System.Drawing.Point(1018, 90);
-            this.btnReservation.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.btnReservation.Name = "btnReservation";
-            this.btnReservation.Size = new System.Drawing.Size(106, 26);
-            this.btnReservation.TabIndex = 33;
-            this.btnReservation.Text = "&Reserver";
-            this.btnReservation.UseVisualStyleBackColor = true;
-            this.btnReservation.Click += new System.EventHandler(this.btnReservation_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1018, 132);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 26);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Pa&yer";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnAnnuler
-            // 
-            this.btnAnnuler.Location = new System.Drawing.Point(1018, 172);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(106, 26);
-            this.btnAnnuler.TabIndex = 35;
-            this.btnAnnuler.Text = "&Annuler";
-            this.btnAnnuler.UseVisualStyleBackColor = true;
-            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -229,6 +124,112 @@ namespace Projet_GL_Ana_Moreira
             this.Prix.MinimumWidth = 8;
             this.Prix.Name = "Prix";
             this.Prix.Width = 150;
+            // 
+            // dgvGroupe
+            // 
+            this.dgvGroupe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGroupe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Groupe,
+            this.Heure,
+            this.Scene});
+            this.dgvGroupe.Location = new System.Drawing.Point(14, 266);
+            this.dgvGroupe.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dgvGroupe.Name = "dgvGroupe";
+            this.dgvGroupe.RowHeadersWidth = 82;
+            this.dgvGroupe.RowTemplate.Height = 41;
+            this.dgvGroupe.Size = new System.Drawing.Size(685, 141);
+            this.dgvGroupe.TabIndex = 2;
+            // 
+            // Groupe
+            // 
+            this.Groupe.HeaderText = "Groupe";
+            this.Groupe.MinimumWidth = 8;
+            this.Groupe.Name = "Groupe";
+            this.Groupe.Width = 200;
+            // 
+            // Heure
+            // 
+            this.Heure.HeaderText = "Heure de passage";
+            this.Heure.MinimumWidth = 8;
+            this.Heure.Name = "Heure";
+            this.Heure.Width = 200;
+            // 
+            // Scene
+            // 
+            this.Scene.HeaderText = "Scene";
+            this.Scene.MinimumWidth = 8;
+            this.Scene.Name = "Scene";
+            this.Scene.Width = 200;
+            // 
+            // dgvModalité
+            // 
+            this.dgvModalité.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvModalité.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Modalité,
+            this.PrixMode});
+            this.dgvModalité.Location = new System.Drawing.Point(738, 266);
+            this.dgvModalité.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dgvModalité.Name = "dgvModalité";
+            this.dgvModalité.RowHeadersWidth = 82;
+            this.dgvModalité.RowTemplate.Height = 41;
+            this.dgvModalité.Size = new System.Drawing.Size(386, 141);
+            this.dgvModalité.TabIndex = 3;
+            // 
+            // Modalité
+            // 
+            this.Modalité.HeaderText = "Modalité";
+            this.Modalité.MinimumWidth = 8;
+            this.Modalité.Name = "Modalité";
+            this.Modalité.Width = 200;
+            // 
+            // PrixMode
+            // 
+            this.PrixMode.HeaderText = "Prix";
+            this.PrixMode.MinimumWidth = 8;
+            this.PrixMode.Name = "PrixMode";
+            // 
+            // btnAjoutFav
+            // 
+            this.btnAjoutFav.Location = new System.Drawing.Point(1018, 49);
+            this.btnAjoutFav.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnAjoutFav.Name = "btnAjoutFav";
+            this.btnAjoutFav.Size = new System.Drawing.Size(106, 26);
+            this.btnAjoutFav.TabIndex = 4;
+            this.btnAjoutFav.Text = "&Ajouter favoris";
+            this.btnAjoutFav.UseVisualStyleBackColor = true;
+            // 
+            // btnReservation
+            // 
+            this.btnReservation.Location = new System.Drawing.Point(1018, 90);
+            this.btnReservation.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnReservation.Name = "btnReservation";
+            this.btnReservation.Size = new System.Drawing.Size(106, 26);
+            this.btnReservation.TabIndex = 5;
+            this.btnReservation.Text = "&Reserver";
+            this.btnReservation.UseVisualStyleBackColor = true;
+            this.btnReservation.Click += new System.EventHandler(this.btnReservation_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1018, 132);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 26);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Pa&yer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.Location = new System.Drawing.Point(1018, 172);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(106, 26);
+            this.btnAnnuler.TabIndex = 7;
+            this.btnAnnuler.Text = "&Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // Programme
             // 

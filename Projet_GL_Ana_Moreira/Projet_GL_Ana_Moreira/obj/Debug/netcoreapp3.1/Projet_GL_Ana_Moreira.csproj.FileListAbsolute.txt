@@ -44,3 +44,5 @@ C:\Users\41786\Source\Repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_More
 C:\Users\41786\Source\Repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Debug\netcoreapp3.1\Projet_GL_Ana_Moreira.dll
 C:\Users\41786\Source\Repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Debug\netcoreapp3.1\Projet_GL_Ana_Moreira.pdb
 C:\Users\41786\Source\Repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Debug\netcoreapp3.1\Projet_GL_Ana_Moreira.genruntimeconfig.cache
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Debug\netcoreapp3.1\Projet_GL_Ana_Moreira.PagePrincipale.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Debug\netcoreapp3.1\Projet_GL_Ana_Moreira.Properties.Resources.resources
