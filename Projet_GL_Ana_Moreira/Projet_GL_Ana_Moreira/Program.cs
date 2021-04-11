@@ -8,39 +8,20 @@ namespace Projet_GL_Ana_Moreira
 {
     static class Program
     {
-       
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
         [STAThread]
         static void Main()
         {
-            // SINGLETON
-           // MySingleton mySingleton = MySingleton.Instance;
-           // mySingleton.DoSomething();
-
-
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-     
-            Application.Run(new PagePrincipale());
-        
+        //    Form f = new PagePrincipale();
+            Application.Run(new JournalDeBord());
+        //    f.Visible = false;
+         //   Form login =new PageLogin();
+           // login.Show();
         }
-    }
-   /* public class MySingleton
-    {
-        private static MySingleton instance = null;
-        private MySingleton() { }
-
-        public static MySingleton Instance {
-            get
-            {
-                if (instance == null )
-                {
-                    instance = new MySingleton(); 
-                }
-                 return instance; 
-            } 
-        }
-        public void DoSomething(){ // show }
     }
 }
-   */

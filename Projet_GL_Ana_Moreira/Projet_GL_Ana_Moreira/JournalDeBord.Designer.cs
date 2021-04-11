@@ -29,6 +29,7 @@ namespace Projet_GL_Ana_Moreira
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JournalDeBord));
             this.lblFest = new System.Windows.Forms.Label();
             this.lblRecommande = new System.Windows.Forms.Label();
             this.lblFav = new System.Windows.Forms.Label();
@@ -66,48 +67,74 @@ namespace Projet_GL_Ana_Moreira
             this.txtNbReservation = new System.Windows.Forms.TextBox();
             this.txtGenreRechercher = new System.Windows.Forms.TextBox();
             this.txtFestRechercher = new System.Windows.Forms.TextBox();
-            this.btnSelection = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFav)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecommande)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTendance)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblFest
             // 
             this.lblFest.AutoSize = true;
-            this.lblFest.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFest.Location = new System.Drawing.Point(52, 33);
+            this.lblFest.Location = new System.Drawing.Point(50, 55);
             this.lblFest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFest.Name = "lblFest";
-            this.lblFest.Size = new System.Drawing.Size(108, 21);
-            this.lblFest.TabIndex = 0;
-            this.lblFest.Text = "&Vos festivales";
+            this.lblFest.Size = new System.Drawing.Size(76, 15);
+            this.lblFest.TabIndex = 6;
+            this.lblFest.Text = "Vos festivales";
             this.lblFest.Click += new System.EventHandler(this.lblFest_Click);
             // 
             // lblRecommande
             // 
             this.lblRecommande.AutoSize = true;
-            this.lblRecommande.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblRecommande.Location = new System.Drawing.Point(52, 220);
+            this.lblRecommande.Location = new System.Drawing.Point(50, 242);
             this.lblRecommande.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRecommande.Name = "lblRecommande";
-            this.lblRecommande.Size = new System.Drawing.Size(192, 21);
-            this.lblRecommande.TabIndex = 4;
-            this.lblRecommande.Text = "&Recommandé pour vous ";
+            this.lblRecommande.Size = new System.Drawing.Size(140, 15);
+            this.lblRecommande.TabIndex = 11;
+            this.lblRecommande.Text = "Recommandé pour vous ";
             // 
             // lblFav
             // 
             this.lblFav.AutoSize = true;
-            this.lblFav.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFav.Location = new System.Drawing.Point(597, 33);
+            this.lblFav.Location = new System.Drawing.Point(597, 55);
             this.lblFav.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFav.Name = "lblFav";
-            this.lblFav.Size = new System.Drawing.Size(89, 21);
-            this.lblFav.TabIndex = 2;
-            this.lblFav.Text = "V&os favoris";
+            this.lblFav.Size = new System.Drawing.Size(63, 15);
+            this.lblFav.TabIndex = 10;
+            this.lblFav.Text = "Vos favoris";
             this.lblFav.Click += new System.EventHandler(this.lblFav_Click);
             // 
             // lblStat
@@ -123,13 +150,12 @@ namespace Projet_GL_Ana_Moreira
             // lblTendance
             // 
             this.lblTendance.AutoSize = true;
-            this.lblTendance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTendance.Location = new System.Drawing.Point(597, 220);
+            this.lblTendance.Location = new System.Drawing.Point(597, 242);
             this.lblTendance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTendance.Name = "lblTendance";
-            this.lblTendance.Size = new System.Drawing.Size(167, 21);
-            this.lblTendance.TabIndex = 6;
-            this.lblTendance.Text = "&Tendance de la saison";
+            this.lblTendance.Size = new System.Drawing.Size(121, 15);
+            this.lblTendance.TabIndex = 18;
+            this.lblTendance.Text = "Tendance de la saison";
             this.lblTendance.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView5
@@ -183,13 +209,13 @@ namespace Projet_GL_Ana_Moreira
             this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15});
-            this.dgvFest.Location = new System.Drawing.Point(52, 55);
+            this.dgvFest.Location = new System.Drawing.Point(50, 80);
             this.dgvFest.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.dgvFest.Name = "dgvFest";
             this.dgvFest.RowHeadersWidth = 82;
             this.dgvFest.RowTemplate.Height = 41;
             this.dgvFest.Size = new System.Drawing.Size(436, 141);
-            this.dgvFest.TabIndex = 1;
+            this.dgvFest.TabIndex = 20;
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -213,13 +239,12 @@ namespace Projet_GL_Ana_Moreira
             // lblStatistique
             // 
             this.lblStatistique.AutoSize = true;
-            this.lblStatistique.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblStatistique.Location = new System.Drawing.Point(52, 427);
+            this.lblStatistique.Location = new System.Drawing.Point(46, 432);
             this.lblStatistique.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatistique.Name = "lblStatistique";
-            this.lblStatistique.Size = new System.Drawing.Size(92, 21);
-            this.lblStatistique.TabIndex = 8;
-            this.lblStatistique.Text = "&Statistique ";
+            this.lblStatistique.Size = new System.Drawing.Size(65, 15);
+            this.lblStatistique.TabIndex = 21;
+            this.lblStatistique.Text = "Statistique ";
             // 
             // lblNbFest
             // 
@@ -228,8 +253,8 @@ namespace Projet_GL_Ana_Moreira
             this.lblNbFest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNbFest.Name = "lblNbFest";
             this.lblNbFest.Size = new System.Drawing.Size(107, 15);
-            this.lblNbFest.TabIndex = 9;
-            this.lblNbFest.Text = "&Nombre de festival";
+            this.lblNbFest.TabIndex = 22;
+            this.lblNbFest.Text = "Nombre de festival";
             // 
             // lblNbReservation
             // 
@@ -238,29 +263,29 @@ namespace Projet_GL_Ana_Moreira
             this.lblNbReservation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNbReservation.Name = "lblNbReservation";
             this.lblNbReservation.Size = new System.Drawing.Size(134, 15);
-            this.lblNbReservation.TabIndex = 11;
-            this.lblNbReservation.Text = "No&mbre de Reservation ";
+            this.lblNbReservation.TabIndex = 23;
+            this.lblNbReservation.Text = "Nombre de Reservation ";
             // 
             // lblFestRechercher
             // 
             this.lblFestRechercher.AutoSize = true;
-            this.lblFestRechercher.Location = new System.Drawing.Point(597, 476);
+            this.lblFestRechercher.Location = new System.Drawing.Point(52, 540);
             this.lblFestRechercher.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFestRechercher.Name = "lblFestRechercher";
             this.lblFestRechercher.Size = new System.Drawing.Size(161, 15);
-            this.lblFestRechercher.TabIndex = 13;
-            this.lblFestRechercher.Text = "Le festiv&ale le plus rechercher";
+            this.lblFestRechercher.TabIndex = 24;
+            this.lblFestRechercher.Text = "Le festivale le plus rechercher";
             this.lblFestRechercher.Click += new System.EventHandler(this.label6_Click);
             // 
             // lblGenreRechercher
             // 
             this.lblGenreRechercher.AutoSize = true;
-            this.lblGenreRechercher.Location = new System.Drawing.Point(597, 508);
+            this.lblGenreRechercher.Location = new System.Drawing.Point(52, 572);
             this.lblGenreRechercher.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGenreRechercher.Name = "lblGenreRechercher";
             this.lblGenreRechercher.Size = new System.Drawing.Size(148, 15);
-            this.lblGenreRechercher.TabIndex = 15;
-            this.lblGenreRechercher.Text = "Le &genre le plus rechercher";
+            this.lblGenreRechercher.TabIndex = 25;
+            this.lblGenreRechercher.Text = "Le genre le plus rechercher";
             // 
             // txtNbFest
             // 
@@ -268,27 +293,27 @@ namespace Projet_GL_Ana_Moreira
             this.txtNbFest.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtNbFest.Name = "txtNbFest";
             this.txtNbFest.Size = new System.Drawing.Size(141, 23);
-            this.txtNbFest.TabIndex = 10;
+            this.txtNbFest.TabIndex = 26;
             // 
             // btnRecherche
             // 
-            this.btnRecherche.Location = new System.Drawing.Point(1085, 95);
+            this.btnRecherche.Location = new System.Drawing.Point(1083, 117);
             this.btnRecherche.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRecherche.Name = "btnRecherche";
             this.btnRecherche.Size = new System.Drawing.Size(106, 26);
-            this.btnRecherche.TabIndex = 18;
-            this.btnRecherche.Text = "Rec&hercher";
+            this.btnRecherche.TabIndex = 30;
+            this.btnRecherche.Text = "Rechercher";
             this.btnRecherche.UseVisualStyleBackColor = true;
             this.btnRecherche.Click += new System.EventHandler(this.btnRecherche_Click);
             // 
             // btnDeconnecter
             // 
-            this.btnDeconnecter.Location = new System.Drawing.Point(1085, 58);
+            this.btnDeconnecter.Location = new System.Drawing.Point(1083, 80);
             this.btnDeconnecter.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnDeconnecter.Name = "btnDeconnecter";
             this.btnDeconnecter.Size = new System.Drawing.Size(106, 26);
-            this.btnDeconnecter.TabIndex = 17;
-            this.btnDeconnecter.Text = "&Deconnecter";
+            this.btnDeconnecter.TabIndex = 31;
+            this.btnDeconnecter.Text = "Deconnecter";
             this.btnDeconnecter.UseVisualStyleBackColor = true;
             this.btnDeconnecter.Click += new System.EventHandler(this.btnDeconnecter_Click);
             // 
@@ -299,13 +324,13 @@ namespace Projet_GL_Ana_Moreira
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.dgvFav.Location = new System.Drawing.Point(597, 58);
+            this.dgvFav.Location = new System.Drawing.Point(597, 80);
             this.dgvFav.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.dgvFav.Name = "dgvFav";
             this.dgvFav.RowHeadersWidth = 82;
             this.dgvFav.RowTemplate.Height = 41;
             this.dgvFav.Size = new System.Drawing.Size(435, 141);
-            this.dgvFav.TabIndex = 3;
+            this.dgvFav.TabIndex = 33;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -333,13 +358,13 @@ namespace Projet_GL_Ana_Moreira
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.dgvRecommande.Location = new System.Drawing.Point(52, 247);
+            this.dgvRecommande.Location = new System.Drawing.Point(50, 269);
             this.dgvRecommande.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.dgvRecommande.Name = "dgvRecommande";
             this.dgvRecommande.RowHeadersWidth = 82;
             this.dgvRecommande.RowTemplate.Height = 41;
             this.dgvRecommande.Size = new System.Drawing.Size(436, 141);
-            this.dgvRecommande.TabIndex = 5;
+            this.dgvRecommande.TabIndex = 34;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -367,13 +392,13 @@ namespace Projet_GL_Ana_Moreira
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
-            this.dgvTendance.Location = new System.Drawing.Point(597, 247);
+            this.dgvTendance.Location = new System.Drawing.Point(597, 269);
             this.dgvTendance.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.dgvTendance.Name = "dgvTendance";
             this.dgvTendance.RowHeadersWidth = 82;
             this.dgvTendance.RowTemplate.Height = 41;
             this.dgvTendance.Size = new System.Drawing.Size(435, 141);
-            this.dgvTendance.TabIndex = 7;
+            this.dgvTendance.TabIndex = 35;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -400,49 +425,264 @@ namespace Projet_GL_Ana_Moreira
             this.txtNbReservation.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtNbReservation.Name = "txtNbReservation";
             this.txtNbReservation.Size = new System.Drawing.Size(141, 23);
-            this.txtNbReservation.TabIndex = 12;
+            this.txtNbReservation.TabIndex = 36;
             // 
             // txtGenreRechercher
             // 
-            this.txtGenreRechercher.Location = new System.Drawing.Point(773, 500);
+            this.txtGenreRechercher.Location = new System.Drawing.Point(228, 564);
             this.txtGenreRechercher.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtGenreRechercher.Name = "txtGenreRechercher";
             this.txtGenreRechercher.Size = new System.Drawing.Size(141, 23);
-            this.txtGenreRechercher.TabIndex = 16;
+            this.txtGenreRechercher.TabIndex = 38;
             // 
             // txtFestRechercher
             // 
-            this.txtFestRechercher.Location = new System.Drawing.Point(773, 468);
+            this.txtFestRechercher.Location = new System.Drawing.Point(228, 532);
             this.txtFestRechercher.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtFestRechercher.Name = "txtFestRechercher";
             this.txtFestRechercher.Size = new System.Drawing.Size(141, 23);
-            this.txtFestRechercher.TabIndex = 14;
-            // 
-            // btnSelection
-            // 
-            this.btnSelection.Location = new System.Drawing.Point(1085, 134);
-            this.btnSelection.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.btnSelection.Name = "btnSelection";
-            this.btnSelection.Size = new System.Drawing.Size(106, 26);
-            this.btnSelection.TabIndex = 19;
-            this.btnSelection.Text = "&Selectionner";
-            this.btnSelection.UseVisualStyleBackColor = true;
-            this.btnSelection.Click += new System.EventHandler(this.button1_Click);
+            this.txtFestRechercher.TabIndex = 37;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1221, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1231, 24);
             this.menuStrip1.TabIndex = 40;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.toolStripSeparator,
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.printToolStripMenuItem,
+            this.printPreviewToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
+            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Text = "&New";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Text = "&Open";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Text = "&Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Text = "Save &As";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Text = "&Print";
+            // 
+            // printPreviewToolStripMenuItem
+            // 
+            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
+            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem,
+            this.redoToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.cutToolStripMenuItem,
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.selectAllToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "&Edit";
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.undoToolStripMenuItem.Text = "&Undo";
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.redoToolStripMenuItem.Text = "&Redo";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
+            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.cutToolStripMenuItem.Text = "Cu&t";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
+            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.copyToolStripMenuItem.Text = "&Copy";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
+            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.pasteToolStripMenuItem.Text = "&Paste";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
+            // 
+            // selectAllToolStripMenuItem
+            // 
+            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.selectAllToolStripMenuItem.Text = "Select &All";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.customizeToolStripMenuItem,
+            this.optionsToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.toolsToolStripMenuItem.Text = "&Tools";
+            // 
+            // customizeToolStripMenuItem
+            // 
+            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.customizeToolStripMenuItem.Text = "&Customize";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.optionsToolStripMenuItem.Text = "&Options";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contentsToolStripMenuItem,
+            this.indexToolStripMenuItem,
+            this.searchToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // contentsToolStripMenuItem
+            // 
+            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.contentsToolStripMenuItem.Text = "&Contents";
+            // 
+            // indexToolStripMenuItem
+            // 
+            this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.indexToolStripMenuItem.Text = "&Index";
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.searchToolStripMenuItem.Text = "&Search";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // JournalDeBord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1221, 550);
-            this.Controls.Add(this.btnSelection);
+            this.ClientSize = new System.Drawing.Size(1231, 645);
             this.Controls.Add(this.txtGenreRechercher);
             this.Controls.Add(this.txtFestRechercher);
             this.Controls.Add(this.txtNbReservation);
@@ -474,6 +714,8 @@ namespace Projet_GL_Ana_Moreira
             ((System.ComponentModel.ISupportInitialize)(this.dgvFav)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecommande)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTendance)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,7 +760,35 @@ namespace Projet_GL_Ana_Moreira
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.TextBox txtGenreRechercher;
         private System.Windows.Forms.TextBox txtFestRechercher;
-        private System.Windows.Forms.Button btnSelection;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem printPreviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem indexToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

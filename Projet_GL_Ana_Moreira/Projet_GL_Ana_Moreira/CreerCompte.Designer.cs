@@ -62,7 +62,7 @@ namespace Projet_GL_Ana_Moreira
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(36, 15);
-            this.lblEmail.TabIndex = 4;
+            this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "&Email";
             this.lblEmail.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -83,7 +83,7 @@ namespace Projet_GL_Ana_Moreira
             this.lblLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(37, 15);
-            this.lblLogin.TabIndex = 6;
+            this.lblLogin.TabIndex = 3;
             this.lblLogin.Text = "&Login";
             // 
             // lblMP
@@ -93,7 +93,7 @@ namespace Projet_GL_Ana_Moreira
             this.lblMP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMP.Name = "lblMP";
             this.lblMP.Size = new System.Drawing.Size(77, 15);
-            this.lblMP.TabIndex = 8;
+            this.lblMP.TabIndex = 4;
             this.lblMP.Text = "&Mot de passe";
             // 
             // lblMPConfi
@@ -103,7 +103,7 @@ namespace Projet_GL_Ana_Moreira
             this.lblMPConfi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMPConfi.Name = "lblMPConfi";
             this.lblMPConfi.Size = new System.Drawing.Size(61, 15);
-            this.lblMPConfi.TabIndex = 10;
+            this.lblMPConfi.TabIndex = 5;
             this.lblMPConfi.Text = "&Confirmer";
             this.lblMPConfi.Click += new System.EventHandler(this.label6_Click);
             // 
@@ -113,7 +113,7 @@ namespace Projet_GL_Ana_Moreira
             this.btnCreer.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnCreer.Name = "btnCreer";
             this.btnCreer.Size = new System.Drawing.Size(81, 22);
-            this.btnCreer.TabIndex = 12;
+            this.btnCreer.TabIndex = 6;
             this.btnCreer.Text = "C&reer";
             this.btnCreer.UseVisualStyleBackColor = true;
             this.btnCreer.Click += new System.EventHandler(this.Creer_Click);
@@ -124,7 +124,7 @@ namespace Projet_GL_Ana_Moreira
             this.txtNom.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(110, 23);
-            this.txtNom.TabIndex = 1;
+            this.txtNom.TabIndex = 7;
             // 
             // txtPrenom
             // 
@@ -132,7 +132,7 @@ namespace Projet_GL_Ana_Moreira
             this.txtPrenom.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtPrenom.Name = "txtPrenom";
             this.txtPrenom.Size = new System.Drawing.Size(110, 23);
-            this.txtPrenom.TabIndex = 3;
+            this.txtPrenom.TabIndex = 8;
             // 
             // txtEmail
             // 
@@ -140,7 +140,7 @@ namespace Projet_GL_Ana_Moreira
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(110, 23);
-            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TabIndex = 9;
             // 
             // txtLogin
             // 
@@ -148,7 +148,7 @@ namespace Projet_GL_Ana_Moreira
             this.txtLogin.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(110, 23);
-            this.txtLogin.TabIndex = 7;
+            this.txtLogin.TabIndex = 10;
             // 
             // txtMP
             // 
@@ -156,8 +156,7 @@ namespace Projet_GL_Ana_Moreira
             this.txtMP.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtMP.Name = "txtMP";
             this.txtMP.Size = new System.Drawing.Size(110, 23);
-            this.txtMP.TabIndex = 9;
-            this.txtMP.TextChanged += new System.EventHandler(this.txtMP_TextChanged);
+            this.txtMP.TabIndex = 11;
             // 
             // txtMPConf
             // 
@@ -165,8 +164,7 @@ namespace Projet_GL_Ana_Moreira
             this.txtMPConf.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtMPConf.Name = "txtMPConf";
             this.txtMPConf.Size = new System.Drawing.Size(110, 23);
-            this.txtMPConf.TabIndex = 11;
-            this.txtMPConf.TextChanged += new System.EventHandler(this.txtMPConf_TextChanged);
+            this.txtMPConf.TabIndex = 12;
             // 
             // btnAnuuler
             // 
@@ -198,7 +196,6 @@ namespace Projet_GL_Ana_Moreira
             this.Controls.Add(this.lblPrenom);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblNom);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "CreerCompte";
             this.Text = "CreerCompte";

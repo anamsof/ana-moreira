@@ -19,27 +19,5 @@ namespace Projet_GL_Ana_Moreira
         {
 
         }
-
-        private void btnAnnuler_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnConfirmer_Click(object sender, EventArgs e)
-        {
-            // modifier le statue & La BDD
-            if () {
-                Payement p = new Payement();
-                p.ShowDialog();
-            }
-            else if () {
-                Reservation r = new Reservation();
-                r.ShowDialog();
-            }
-            else { 
-            
-            }
-            this.Close();
-        }
     }
 }

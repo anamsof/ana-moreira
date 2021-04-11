@@ -19,21 +19,5 @@ namespace Projet_GL_Ana_Moreira
         {
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           //ajouter a la bdd
-            this.Close();
-        }
-
-        private void btnAnnuler_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

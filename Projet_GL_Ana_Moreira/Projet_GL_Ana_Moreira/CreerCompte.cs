@@ -49,26 +49,14 @@ namespace Projet_GL_Ana_Moreira
         private void Creer_Click(object sender, EventArgs e)
         {
             verification();
-            this.Close();
         }
 
         private void btnAnuuler_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Voulez-vous vraiment annuler votre reation de compte", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            this.Close();
             Form cc = new PageLogin();
             cc.Show();
-        }
-
-        private void txtMP_TextChanged(object sender, EventArgs e)
-        {
-            txtMP.PasswordChar = '*';
-        }
-
-        private void txtMPConf_TextChanged(object sender, EventArgs e)
-        {
-            txtMPConf.PasswordChar = '*';
         }
     }
 }
