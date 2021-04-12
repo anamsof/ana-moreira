@@ -1,0 +1,15 @@
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.CreerCompte.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.Facture.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.PagePrincipale.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.JournalDeBord.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.PageLogin.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.MasterCard.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.Payement.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.Programme.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.Properties.Resources.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.RechercheAvancé.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.Reservation.resources
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.csproj.GenerateResource.cache
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.AssemblyInfoInputs.cache
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.AssemblyInfo.cs
+C:\Users\41786\source\repos\ana-moreira\Projet_GL_Ana_Moreira\Projet_GL_Ana_Moreira\obj\Release\netcoreapp3.1\Projet_GL_Ana_Moreira.csproj.CoreCompileInputs.cache

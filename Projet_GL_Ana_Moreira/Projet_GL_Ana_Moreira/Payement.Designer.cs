@@ -29,137 +29,175 @@ namespace Projet_GL_Ana_Moreira
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Genre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnConfirmer = new System.Windows.Forms.Button();
+            this.lblDescPaye = new System.Windows.Forms.Label();
+            this.lblMethode = new System.Windows.Forms.Label();
+            this.cboMethode = new System.Windows.Forms.ComboBox();
+            this.dgvFest = new System.Windows.Forms.DataGridView();
+            this.dgvFestTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDateTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvLieuTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvGenreTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvNbParticTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrixTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btnAnnuler
             // 
-            this.button2.Location = new System.Drawing.Point(970, 421);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 46);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Annuler";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnAnnuler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAnnuler.Location = new System.Drawing.Point(913, 206);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(81, 22);
+            this.btnAnnuler.TabIndex = 5;
+            this.btnAnnuler.Text = "&Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
-            // button1
+            // btnConfirmer
             // 
-            this.button1.Location = new System.Drawing.Point(787, 421);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 46);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Confirmer";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnConfirmer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfirmer.Location = new System.Drawing.Point(815, 206);
+            this.btnConfirmer.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnConfirmer.Name = "btnConfirmer";
+            this.btnConfirmer.Size = new System.Drawing.Size(81, 22);
+            this.btnConfirmer.TabIndex = 4;
+            this.btnConfirmer.Text = "&Confirmer";
+            this.btnConfirmer.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // lblDescPaye
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 32);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Description de votre payement";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblDescPaye.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDescPaye.AutoSize = true;
+            this.lblDescPaye.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescPaye.Location = new System.Drawing.Point(19, 20);
+            this.lblDescPaye.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescPaye.Name = "lblDescPaye";
+            this.lblDescPaye.Size = new System.Drawing.Size(237, 21);
+            this.lblDescPaye.TabIndex = 0;
+            this.lblDescPaye.Text = "&Description de votre payement";
+            this.lblDescPaye.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblMethode
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 424);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 32);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Methode de payement";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblMethode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMethode.AutoSize = true;
+            this.lblMethode.Location = new System.Drawing.Point(19, 206);
+            this.lblMethode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMethode.Name = "lblMethode";
+            this.lblMethode.Size = new System.Drawing.Size(127, 15);
+            this.lblMethode.TabIndex = 2;
+            this.lblMethode.Text = "&Methode de payement";
+            this.lblMethode.Click += new System.EventHandler(this.label2_Click);
             // 
-            // comboBox1
+            // cboMethode
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboMethode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboMethode.FormattingEnabled = true;
+            this.cboMethode.Items.AddRange(new object[] {
             "Facture",
             "MasterCard"});
-            this.comboBox1.Location = new System.Drawing.Point(329, 421);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(314, 40);
-            this.comboBox1.TabIndex = 13;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cboMethode.Location = new System.Drawing.Point(178, 204);
+            this.cboMethode.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.cboMethode.Name = "cboMethode";
+            this.cboMethode.Size = new System.Drawing.Size(171, 23);
+            this.cboMethode.TabIndex = 3;
+            this.cboMethode.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // dataGridView2
+            // dgvFest
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.Genre,
-            this.Prix});
-            this.dataGridView2.Location = new System.Drawing.Point(34, 108);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 82;
-            this.dataGridView2.RowTemplate.Height = 41;
-            this.dataGridView2.Size = new System.Drawing.Size(1086, 284);
-            this.dataGridView2.TabIndex = 27;
+            this.dgvFest.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvFest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFest.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFestTxtColumn,
+            this.dgvDateTxtColumn,
+            this.dgvLieuTxtColumn,
+            this.dgvGenreTxtColumn,
+            this.dgvNbParticTxtColumn,
+            this.dgvPrixTxtColumn});
+            this.dgvFest.Location = new System.Drawing.Point(19, 47);
+            this.dgvFest.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dgvFest.Name = "dgvFest";
+            this.dgvFest.RowHeadersWidth = 82;
+            this.dgvFest.RowTemplate.Height = 41;
+            this.dgvFest.Size = new System.Drawing.Size(976, 143);
+            this.dgvFest.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
+            // dgvFestTxtColumn
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Festival";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 200;
+            this.dgvFestTxtColumn.HeaderText = "Festival";
+            this.dgvFestTxtColumn.MinimumWidth = 8;
+            this.dgvFestTxtColumn.Name = "dgvFestTxtColumn";
+            this.dgvFestTxtColumn.Width = 200;
             // 
-            // dataGridViewTextBoxColumn2
+            // dgvDateTxtColumn
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 200;
+            this.dgvDateTxtColumn.HeaderText = "Date";
+            this.dgvDateTxtColumn.MinimumWidth = 8;
+            this.dgvDateTxtColumn.Name = "dgvDateTxtColumn";
+            this.dgvDateTxtColumn.Width = 150;
             // 
-            // dataGridViewTextBoxColumn3
+            // dgvLieuTxtColumn
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Lieu";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
+            this.dgvLieuTxtColumn.HeaderText = "Lieu";
+            this.dgvLieuTxtColumn.MinimumWidth = 8;
+            this.dgvLieuTxtColumn.Name = "dgvLieuTxtColumn";
+            this.dgvLieuTxtColumn.Width = 150;
             // 
-            // Genre
+            // dgvGenreTxtColumn
             // 
-            this.Genre.HeaderText = "Genre musical";
-            this.Genre.MinimumWidth = 10;
-            this.Genre.Name = "Genre";
-            this.Genre.Width = 200;
+            this.dgvGenreTxtColumn.HeaderText = "Genre musical";
+            this.dgvGenreTxtColumn.MinimumWidth = 8;
+            this.dgvGenreTxtColumn.Name = "dgvGenreTxtColumn";
+            this.dgvGenreTxtColumn.Width = 150;
             // 
-            // Prix
+            // dgvNbParticTxtColumn
             // 
-            this.Prix.HeaderText = "Prix";
-            this.Prix.MinimumWidth = 10;
-            this.Prix.Name = "Prix";
-            this.Prix.Width = 200;
+            this.dgvNbParticTxtColumn.HeaderText = "Nombre de participant";
+            this.dgvNbParticTxtColumn.MinimumWidth = 8;
+            this.dgvNbParticTxtColumn.Name = "dgvNbParticTxtColumn";
+            this.dgvNbParticTxtColumn.Width = 90;
+            // 
+            // dgvPrixTxtColumn
+            // 
+            this.dgvPrixTxtColumn.HeaderText = "Prix";
+            this.dgvPrixTxtColumn.MinimumWidth = 8;
+            this.dgvPrixTxtColumn.Name = "dgvPrixTxtColumn";
+            this.dgvPrixTxtColumn.Width = 150;
             // 
             // Payement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 496);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1010, 247);
+            this.Controls.Add(this.dgvFest);
+            this.Controls.Add(this.cboMethode);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnConfirmer);
+            this.Controls.Add(this.lblMethode);
+            this.Controls.Add(this.lblDescPaye);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1026, 286);
             this.Name = "Payement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payement";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,16 +205,17 @@ namespace Projet_GL_Ana_Moreira
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Genre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Prix;
+        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnConfirmer;
+        private System.Windows.Forms.Label lblDescPaye;
+        private System.Windows.Forms.Label lblMethode;
+        private System.Windows.Forms.ComboBox cboMethode;
+        private System.Windows.Forms.DataGridView dgvFest;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvFestTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvDateTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvLieuTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvGenreTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNbParticTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrixTxtColumn;
     }
 }

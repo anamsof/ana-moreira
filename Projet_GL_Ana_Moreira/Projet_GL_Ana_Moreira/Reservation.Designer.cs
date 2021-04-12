@@ -29,128 +29,169 @@ namespace Projet_GL_Ana_Moreira
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Genre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.lblDescriptionRes = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.btnConfirmer = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.dgvFest = new System.Windows.Forms.DataGridView();
+            this.dgvFestTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDateTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvLieuTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvGenreTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvNbParticTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrixTxtColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblDescriptionRes
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Description de votre reservation";
+            this.lblDescriptionRes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDescriptionRes.AutoSize = true;
+            this.lblDescriptionRes.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescriptionRes.Location = new System.Drawing.Point(14, 17);
+            this.lblDescriptionRes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescriptionRes.Name = "lblDescriptionRes";
+            this.lblDescriptionRes.Size = new System.Drawing.Size(247, 21);
+            this.lblDescriptionRes.TabIndex = 0;
+            this.lblDescriptionRes.Text = "&Description de votre reservation";
             // 
-            // label2
+            // lblDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 454);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 32);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Date limite ";
+            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(14, 213);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(67, 15);
+            this.lblDate.TabIndex = 3;
+            this.lblDate.Text = "D&ate limite ";
             // 
-            // dateTimePicker1
+            // dtpDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(207, 449);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(428, 39);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dtpDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpDate.Location = new System.Drawing.Point(111, 210);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(232, 23);
+            this.dtpDate.TabIndex = 4;
+            this.dtpDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // button1
+            // btnConfirmer
             // 
-            this.button1.Location = new System.Drawing.Point(755, 440);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 46);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Confirmer";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfirmer.Location = new System.Drawing.Point(818, 206);
+            this.btnConfirmer.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnConfirmer.Name = "btnConfirmer";
+            this.btnConfirmer.Size = new System.Drawing.Size(81, 22);
+            this.btnConfirmer.TabIndex = 5;
+            this.btnConfirmer.Text = "&Confirmer";
+            this.btnConfirmer.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Click += new System.EventHandler(this.btnConfirmer_Click);
             // 
-            // button2
+            // btnAnnuler
             // 
-            this.button2.Location = new System.Drawing.Point(925, 440);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 46);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Annuler";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAnnuler.Location = new System.Drawing.Point(909, 206);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(81, 22);
+            this.btnAnnuler.TabIndex = 6;
+            this.btnAnnuler.Text = "&Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
-            // dataGridView2
+            // dgvFest
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.Genre,
-            this.Prix});
-            this.dataGridView2.Location = new System.Drawing.Point(26, 95);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 82;
-            this.dataGridView2.RowTemplate.Height = 41;
-            this.dataGridView2.Size = new System.Drawing.Size(1049, 284);
-            this.dataGridView2.TabIndex = 26;
+            this.dgvFest.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvFest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFest.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFestTxtColumn,
+            this.dgvDateTxtColumn,
+            this.dgvLieuTxtColumn,
+            this.dgvGenreTxtColumn,
+            this.dgvNbParticTxtColumn,
+            this.dgvPrixTxtColumn});
+            this.dgvFest.Location = new System.Drawing.Point(14, 50);
+            this.dgvFest.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dgvFest.Name = "dgvFest";
+            this.dgvFest.RowHeadersWidth = 82;
+            this.dgvFest.RowTemplate.Height = 41;
+            this.dgvFest.Size = new System.Drawing.Size(976, 143);
+            this.dgvFest.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
+            // dgvFestTxtColumn
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Festival";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 200;
+            this.dgvFestTxtColumn.HeaderText = "Festival";
+            this.dgvFestTxtColumn.MinimumWidth = 8;
+            this.dgvFestTxtColumn.Name = "dgvFestTxtColumn";
+            this.dgvFestTxtColumn.Width = 200;
             // 
-            // dataGridViewTextBoxColumn2
+            // dgvDateTxtColumn
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 200;
+            this.dgvDateTxtColumn.HeaderText = "Date";
+            this.dgvDateTxtColumn.MinimumWidth = 8;
+            this.dgvDateTxtColumn.Name = "dgvDateTxtColumn";
+            this.dgvDateTxtColumn.Width = 150;
             // 
-            // dataGridViewTextBoxColumn3
+            // dgvLieuTxtColumn
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Lieu";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
+            this.dgvLieuTxtColumn.HeaderText = "Lieu";
+            this.dgvLieuTxtColumn.MinimumWidth = 8;
+            this.dgvLieuTxtColumn.Name = "dgvLieuTxtColumn";
+            this.dgvLieuTxtColumn.Width = 150;
             // 
-            // Genre
+            // dgvGenreTxtColumn
             // 
-            this.Genre.HeaderText = "Genre musical";
-            this.Genre.MinimumWidth = 10;
-            this.Genre.Name = "Genre";
-            this.Genre.Width = 200;
+            this.dgvGenreTxtColumn.HeaderText = "Genre musical";
+            this.dgvGenreTxtColumn.MinimumWidth = 8;
+            this.dgvGenreTxtColumn.Name = "dgvGenreTxtColumn";
+            this.dgvGenreTxtColumn.Width = 150;
             // 
-            // Prix
+            // dgvNbParticTxtColumn
             // 
-            this.Prix.HeaderText = "Prix";
-            this.Prix.MinimumWidth = 10;
-            this.Prix.Name = "Prix";
-            this.Prix.Width = 200;
+            this.dgvNbParticTxtColumn.HeaderText = "Nombre de participant";
+            this.dgvNbParticTxtColumn.MinimumWidth = 8;
+            this.dgvNbParticTxtColumn.Name = "dgvNbParticTxtColumn";
+            this.dgvNbParticTxtColumn.Width = 90;
+            // 
+            // dgvPrixTxtColumn
+            // 
+            this.dgvPrixTxtColumn.HeaderText = "Prix";
+            this.dgvPrixTxtColumn.MinimumWidth = 8;
+            this.dgvPrixTxtColumn.Name = "dgvPrixTxtColumn";
+            this.dgvPrixTxtColumn.Width = 150;
             // 
             // Reservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1112, 526);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1023, 247);
+            this.Controls.Add(this.dgvFest);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnConfirmer);
+            this.Controls.Add(this.dtpDate);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.lblDescriptionRes);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1039, 286);
             this.Name = "Reservation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reservation";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,16 +199,17 @@ namespace Projet_GL_Ana_Moreira
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Genre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Prix;
+        private System.Windows.Forms.Label lblDescriptionRes;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.Button btnConfirmer;
+        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.DataGridView dgvFest;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvFestTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvDateTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvLieuTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvGenreTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNbParticTxtColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrixTxtColumn;
     }
 }

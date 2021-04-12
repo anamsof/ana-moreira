@@ -22,7 +22,17 @@ namespace Projet_GL_Ana_Moreira
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (cboMethode.SelectedIndex == 0) { 
+                Facture f = new Facture(); 
+                f.ShowDialog(); 
+            }
 
+            else if (cboMethode.SelectedIndex == 1) {
+                MasterCard m = new MasterCard(); 
+                m.ShowDialog(); 
+            }
+
+            else { MessageBox.Show("Selectionner une methode de payement", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -47,7 +57,17 @@ namespace Projet_GL_Ana_Moreira
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

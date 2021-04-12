@@ -30,201 +30,117 @@ namespace Projet_GL_Ana_Moreira
         private void InitializeComponent()
         {
             this.lblFest = new System.Windows.Forms.Label();
-            this.lblRecom = new System.Windows.Forms.Label();
+            this.lblRecommande = new System.Windows.Forms.Label();
             this.lblFav = new System.Windows.Forms.Label();
             this.lblStat = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTendance = new System.Windows.Forms.Label();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.lblRecomm = new System.Windows.Forms.Label();
+            this.dgvFest = new System.Windows.Forms.DataGridView();
+            this.dgvTxtFestival = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTxtDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTxtPrix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblStatistique = new System.Windows.Forms.Label();
+            this.lblNbFest = new System.Windows.Forms.Label();
+            this.lblNbReservation = new System.Windows.Forms.Label();
+            this.lblFestRechercher = new System.Windows.Forms.Label();
+            this.lblGenreRechercher = new System.Windows.Forms.Label();
+            this.txtNbFest = new System.Windows.Forms.TextBox();
+            this.btnRecherche = new System.Windows.Forms.Button();
+            this.txtNbReservation = new System.Windows.Forms.TextBox();
+            this.txtGenreRechercher = new System.Windows.Forms.TextBox();
+            this.txtFestRechercher = new System.Windows.Forms.TextBox();
+            this.btnSelection = new System.Windows.Forms.Button();
+            this.dgvFav = new System.Windows.Forms.DataGridView();
+            this.dgvTxtFestFav = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTxtDateFav = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTxtPrixFav = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvRecomm = new System.Windows.Forms.DataGridView();
+            this.dgvTxtFestRecom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTxtDateRecom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTxtPrixRecom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTendance = new System.Windows.Forms.DataGridView();
+            this.dgvTxtFestTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTxtDateTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTxtPrixTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFav)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRecomm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTendance)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFest
             // 
+            this.lblFest.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFest.AutoSize = true;
-            this.lblFest.Location = new System.Drawing.Point(41, 57);
+            this.lblFest.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblFest.Location = new System.Drawing.Point(52, 24);
+            this.lblFest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFest.Name = "lblFest";
-            this.lblFest.Size = new System.Drawing.Size(156, 32);
-            this.lblFest.TabIndex = 6;
-            this.lblFest.Text = "Vos festivales";
+            this.lblFest.Size = new System.Drawing.Size(108, 21);
+            this.lblFest.TabIndex = 0;
+            this.lblFest.Text = "&Vos festivales";
             this.lblFest.Click += new System.EventHandler(this.lblFest_Click);
             // 
-            // lblRecom
+            // lblRecommande
             // 
-            this.lblRecom.AutoSize = true;
-            this.lblRecom.Location = new System.Drawing.Point(41, 456);
-            this.lblRecom.Name = "lblRecom";
-            this.lblRecom.Size = new System.Drawing.Size(281, 32);
-            this.lblRecom.TabIndex = 11;
-            this.lblRecom.Text = "Recommandé pour vous ";
+            this.lblRecommande.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRecommande.AutoSize = true;
+            this.lblRecommande.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRecommande.Location = new System.Drawing.Point(52, 220);
+            this.lblRecommande.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRecommande.Name = "lblRecommande";
+            this.lblRecommande.Size = new System.Drawing.Size(192, 21);
+            this.lblRecommande.TabIndex = 4;
+            this.lblRecommande.Text = "&Recommandé pour vous ";
             // 
             // lblFav
             // 
+            this.lblFav.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFav.AutoSize = true;
-            this.lblFav.Location = new System.Drawing.Point(764, 57);
+            this.lblFav.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblFav.Location = new System.Drawing.Point(597, 24);
+            this.lblFav.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFav.Name = "lblFav";
-            this.lblFav.Size = new System.Drawing.Size(128, 32);
-            this.lblFav.TabIndex = 10;
-            this.lblFav.Text = "Vos favoris";
+            this.lblFav.Size = new System.Drawing.Size(89, 21);
+            this.lblFav.TabIndex = 2;
+            this.lblFav.Text = "V&os favoris";
             this.lblFav.Click += new System.EventHandler(this.lblFav_Click);
             // 
             // lblStat
             // 
             this.lblStat.AutoSize = true;
-            this.lblStat.Location = new System.Drawing.Point(-258, -282);
+            this.lblStat.Location = new System.Drawing.Point(-139, -132);
+            this.lblStat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStat.Name = "lblStat";
-            this.lblStat.Size = new System.Drawing.Size(132, 32);
+            this.lblStat.Size = new System.Drawing.Size(65, 15);
             this.lblStat.TabIndex = 15;
             this.lblStat.Text = "Statistique ";
             // 
-            // dataGridView2
+            // lblTendance
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.dataGridView2.Location = new System.Drawing.Point(764, 111);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 82;
-            this.dataGridView2.RowTemplate.Height = 41;
-            this.dataGridView2.Size = new System.Drawing.Size(684, 300);
-            this.dataGridView2.TabIndex = 16;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Festival";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Prix";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.dataGridView3.Location = new System.Drawing.Point(41, 514);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 82;
-            this.dataGridView3.RowTemplate.Height = 41;
-            this.dataGridView3.Size = new System.Drawing.Size(684, 300);
-            this.dataGridView3.TabIndex = 17;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Festival";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Prix";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 200;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.dataGridView4.Location = new System.Drawing.Point(764, 514);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 82;
-            this.dataGridView4.RowTemplate.Height = 41;
-            this.dataGridView4.Size = new System.Drawing.Size(684, 300);
-            this.dataGridView4.TabIndex = 19;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Festival";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Prix";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 200;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(764, 456);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 32);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Tendance de la saison";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblTendance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTendance.AutoSize = true;
+            this.lblTendance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTendance.Location = new System.Drawing.Point(597, 220);
+            this.lblTendance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTendance.Name = "lblTendance";
+            this.lblTendance.Size = new System.Drawing.Size(167, 21);
+            this.lblTendance.TabIndex = 6;
+            this.lblTendance.Text = "&Tendance de la saison";
+            this.lblTendance.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView5
             // 
@@ -261,175 +177,340 @@ namespace Projet_GL_Ana_Moreira
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.Width = 200;
             // 
-            // label4
+            // lblRecomm
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(583, 496);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(281, 32);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Recommandé pour vous ";
+            this.lblRecomm.AutoSize = true;
+            this.lblRecomm.Location = new System.Drawing.Point(583, 496);
+            this.lblRecomm.Name = "lblRecomm";
+            this.lblRecomm.Size = new System.Drawing.Size(281, 32);
+            this.lblRecomm.TabIndex = 22;
             // 
-            // dataGridView1
+            // dgvFest
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15});
-            this.dataGridView1.Location = new System.Drawing.Point(41, 111);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 41;
-            this.dataGridView1.Size = new System.Drawing.Size(684, 300);
-            this.dataGridView1.TabIndex = 20;
+            this.dgvFest.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvFest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFest.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTxtFestival,
+            this.dgvTxtDate,
+            this.dgvTxtPrix});
+            this.dgvFest.Location = new System.Drawing.Point(52, 55);
+            this.dgvFest.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dgvFest.Name = "dgvFest";
+            this.dgvFest.RowHeadersWidth = 82;
+            this.dgvFest.RowTemplate.Height = 41;
+            this.dgvFest.Size = new System.Drawing.Size(436, 141);
+            this.dgvFest.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn13
+            // dgvTxtFestival
             // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "Festival";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 200;
+            this.dgvTxtFestival.HeaderText = "Festival";
+            this.dgvTxtFestival.MinimumWidth = 8;
+            this.dgvTxtFestival.Name = "dgvTxtFestival";
+            this.dgvTxtFestival.Width = 150;
             // 
-            // dataGridViewTextBoxColumn14
+            // dgvTxtDate
             // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 200;
+            this.dgvTxtDate.HeaderText = "Date";
+            this.dgvTxtDate.MinimumWidth = 10;
+            this.dgvTxtDate.Name = "dgvTxtDate";
             // 
-            // dataGridViewTextBoxColumn15
+            // dgvTxtPrix
             // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "Prix";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 200;
+            this.dgvTxtPrix.HeaderText = "Prix";
+            this.dgvTxtPrix.MinimumWidth = 8;
+            this.dgvTxtPrix.Name = "dgvTxtPrix";
             // 
-            // label2
+            // lblStatistique
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 922);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 32);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Statistique ";
+            this.lblStatistique.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStatistique.AutoSize = true;
+            this.lblStatistique.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStatistique.Location = new System.Drawing.Point(52, 427);
+            this.lblStatistique.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStatistique.Name = "lblStatistique";
+            this.lblStatistique.Size = new System.Drawing.Size(92, 21);
+            this.lblStatistique.TabIndex = 8;
+            this.lblStatistique.Text = "&Statistique ";
             // 
-            // label3
+            // lblNbFest
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(88, 992);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(218, 32);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Nombre de festival";
+            this.lblNbFest.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNbFest.AutoSize = true;
+            this.lblNbFest.Location = new System.Drawing.Point(52, 476);
+            this.lblNbFest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNbFest.Name = "lblNbFest";
+            this.lblNbFest.Size = new System.Drawing.Size(107, 15);
+            this.lblNbFest.TabIndex = 9;
+            this.lblNbFest.Text = "&Nombre de festival";
             // 
-            // label5
+            // lblNbReservation
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(88, 1053);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(273, 32);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Nombre de Reservation ";
+            this.lblNbReservation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNbReservation.AutoSize = true;
+            this.lblNbReservation.Location = new System.Drawing.Point(52, 508);
+            this.lblNbReservation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNbReservation.Name = "lblNbReservation";
+            this.lblNbReservation.Size = new System.Drawing.Size(134, 15);
+            this.lblNbReservation.TabIndex = 11;
+            this.lblNbReservation.Text = "No&mbre de Reservation ";
             // 
-            // label6
+            // lblFestRechercher
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(788, 992);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(330, 32);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Le festivale le plus rechercher";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.lblFestRechercher.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFestRechercher.AutoSize = true;
+            this.lblFestRechercher.Location = new System.Drawing.Point(597, 476);
+            this.lblFestRechercher.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFestRechercher.Name = "lblFestRechercher";
+            this.lblFestRechercher.Size = new System.Drawing.Size(161, 15);
+            this.lblFestRechercher.TabIndex = 13;
+            this.lblFestRechercher.Text = "Le festiv&ale le plus rechercher";
+            this.lblFestRechercher.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
+            // lblGenreRechercher
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(788, 1067);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(304, 32);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Le genre le plus rechercher";
+            this.lblGenreRechercher.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblGenreRechercher.AutoSize = true;
+            this.lblGenreRechercher.Location = new System.Drawing.Point(597, 508);
+            this.lblGenreRechercher.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGenreRechercher.Name = "lblGenreRechercher";
+            this.lblGenreRechercher.Size = new System.Drawing.Size(148, 15);
+            this.lblGenreRechercher.TabIndex = 15;
+            this.lblGenreRechercher.Text = "Le &genre le plus rechercher";
             // 
-            // textBox1
+            // txtNbFest
             // 
-            this.textBox1.Location = new System.Drawing.Point(396, 985);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 39);
-            this.textBox1.TabIndex = 26;
+            this.txtNbFest.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNbFest.Location = new System.Drawing.Point(228, 468);
+            this.txtNbFest.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txtNbFest.Name = "txtNbFest";
+            this.txtNbFest.Size = new System.Drawing.Size(141, 23);
+            this.txtNbFest.TabIndex = 10;
             // 
-            // textBox2
+            // btnRecherche
             // 
-            this.textBox2.Location = new System.Drawing.Point(396, 1053);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 39);
-            this.textBox2.TabIndex = 27;
+            this.btnRecherche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRecherche.Location = new System.Drawing.Point(1082, 55);
+            this.btnRecherche.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnRecherche.Name = "btnRecherche";
+            this.btnRecherche.Size = new System.Drawing.Size(106, 26);
+            this.btnRecherche.TabIndex = 18;
+            this.btnRecherche.Text = "Rec&hercher";
+            this.btnRecherche.UseVisualStyleBackColor = true;
+            this.btnRecherche.Click += new System.EventHandler(this.btnRecherche_Click);
             // 
-            // textBox3
+            // txtNbReservation
             // 
-            this.textBox3.Location = new System.Drawing.Point(1185, 1053);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(204, 39);
-            this.textBox3.TabIndex = 29;
+            this.txtNbReservation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNbReservation.Location = new System.Drawing.Point(228, 500);
+            this.txtNbReservation.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txtNbReservation.Name = "txtNbReservation";
+            this.txtNbReservation.Size = new System.Drawing.Size(141, 23);
+            this.txtNbReservation.TabIndex = 12;
             // 
-            // textBox4
+            // txtGenreRechercher
             // 
-            this.textBox4.Location = new System.Drawing.Point(1185, 985);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(204, 39);
-            this.textBox4.TabIndex = 28;
+            this.txtGenreRechercher.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtGenreRechercher.Location = new System.Drawing.Point(773, 500);
+            this.txtGenreRechercher.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txtGenreRechercher.Name = "txtGenreRechercher";
+            this.txtGenreRechercher.Size = new System.Drawing.Size(141, 23);
+            this.txtGenreRechercher.TabIndex = 16;
             // 
-            // button1
+            // txtFestRechercher
             // 
-            this.button1.Location = new System.Drawing.Point(1633, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 56);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Rechercher";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtFestRechercher.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFestRechercher.Location = new System.Drawing.Point(773, 468);
+            this.txtFestRechercher.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txtFestRechercher.Name = "txtFestRechercher";
+            this.txtFestRechercher.Size = new System.Drawing.Size(141, 23);
+            this.txtFestRechercher.TabIndex = 14;
             // 
-            // button2
+            // btnSelection
             // 
-            this.button2.Location = new System.Drawing.Point(1633, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 56);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "Deconnecter";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSelection.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSelection.Location = new System.Drawing.Point(1082, 96);
+            this.btnSelection.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btnSelection.Name = "btnSelection";
+            this.btnSelection.Size = new System.Drawing.Size(106, 26);
+            this.btnSelection.TabIndex = 19;
+            this.btnSelection.Text = "S&electionner";
+            this.btnSelection.UseVisualStyleBackColor = true;
+            this.btnSelection.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dgvFav
+            // 
+            this.dgvFav.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvFav.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFav.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTxtFestFav,
+            this.dgvTxtDateFav,
+            this.dgvTxtPrixFav});
+            this.dgvFav.Location = new System.Drawing.Point(597, 55);
+            this.dgvFav.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dgvFav.Name = "dgvFav";
+            this.dgvFav.RowHeadersWidth = 82;
+            this.dgvFav.RowTemplate.Height = 41;
+            this.dgvFav.Size = new System.Drawing.Size(436, 141);
+            this.dgvFav.TabIndex = 20;
+            this.dgvFav.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // dgvTxtFestFav
+            // 
+            this.dgvTxtFestFav.HeaderText = "Festival";
+            this.dgvTxtFestFav.MinimumWidth = 8;
+            this.dgvTxtFestFav.Name = "dgvTxtFestFav";
+            this.dgvTxtFestFav.Width = 150;
+            // 
+            // dgvTxtDateFav
+            // 
+            this.dgvTxtDateFav.HeaderText = "Date";
+            this.dgvTxtDateFav.MinimumWidth = 10;
+            this.dgvTxtDateFav.Name = "dgvTxtDateFav";
+            // 
+            // dgvTxtPrixFav
+            // 
+            this.dgvTxtPrixFav.HeaderText = "Prix";
+            this.dgvTxtPrixFav.MinimumWidth = 8;
+            this.dgvTxtPrixFav.Name = "dgvTxtPrixFav";
+            // 
+            // dgvRecomm
+            // 
+            this.dgvRecomm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvRecomm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRecomm.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTxtFestRecom,
+            this.dgvTxtDateRecom,
+            this.dgvTxtPrixRecom});
+            this.dgvRecomm.Location = new System.Drawing.Point(52, 247);
+            this.dgvRecomm.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dgvRecomm.Name = "dgvRecomm";
+            this.dgvRecomm.RowHeadersWidth = 82;
+            this.dgvRecomm.RowTemplate.Height = 41;
+            this.dgvRecomm.Size = new System.Drawing.Size(436, 141);
+            this.dgvRecomm.TabIndex = 21;
+            this.dgvRecomm.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRecomm_CellContentClick);
+            // 
+            // dgvTxtFestRecom
+            // 
+            this.dgvTxtFestRecom.HeaderText = "Festival";
+            this.dgvTxtFestRecom.MinimumWidth = 8;
+            this.dgvTxtFestRecom.Name = "dgvTxtFestRecom";
+            this.dgvTxtFestRecom.Width = 150;
+            // 
+            // dgvTxtDateRecom
+            // 
+            this.dgvTxtDateRecom.HeaderText = "Date";
+            this.dgvTxtDateRecom.MinimumWidth = 10;
+            this.dgvTxtDateRecom.Name = "dgvTxtDateRecom";
+            // 
+            // dgvTxtPrixRecom
+            // 
+            this.dgvTxtPrixRecom.HeaderText = "Prix";
+            this.dgvTxtPrixRecom.MinimumWidth = 8;
+            this.dgvTxtPrixRecom.Name = "dgvTxtPrixRecom";
+            // 
+            // dgvTendance
+            // 
+            this.dgvTendance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTendance.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTxtFestTen,
+            this.dgvTxtDateTen,
+            this.dgvTxtPrixTen});
+            this.dgvTendance.Location = new System.Drawing.Point(597, 247);
+            this.dgvTendance.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dgvTendance.Name = "dgvTendance";
+            this.dgvTendance.RowHeadersWidth = 82;
+            this.dgvTendance.RowTemplate.Height = 41;
+            this.dgvTendance.Size = new System.Drawing.Size(436, 141);
+            this.dgvTendance.TabIndex = 22;
+            // 
+            // dgvTxtFestTen
+            // 
+            this.dgvTxtFestTen.HeaderText = "Festival";
+            this.dgvTxtFestTen.MinimumWidth = 8;
+            this.dgvTxtFestTen.Name = "dgvTxtFestTen";
+            this.dgvTxtFestTen.Width = 150;
+            // 
+            // dgvTxtDateTen
+            // 
+            this.dgvTxtDateTen.HeaderText = "Date";
+            this.dgvTxtDateTen.MinimumWidth = 10;
+            this.dgvTxtDateTen.Name = "dgvTxtDateTen";
+            // 
+            // dgvTxtPrixTen
+            // 
+            this.dgvTxtPrixTen.HeaderText = "Prix";
+            this.dgvTxtPrixTen.MinimumWidth = 8;
+            this.dgvTxtPrixTen.Name = "dgvTxtPrixTen";
             // 
             // JournalDeBord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1854, 1222);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dataGridView4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
+            this.ClientSize = new System.Drawing.Size(1221, 572);
+            this.Controls.Add(this.dgvTendance);
+            this.Controls.Add(this.dgvRecomm);
+            this.Controls.Add(this.dgvFav);
+            this.Controls.Add(this.btnSelection);
+            this.Controls.Add(this.txtGenreRechercher);
+            this.Controls.Add(this.txtFestRechercher);
+            this.Controls.Add(this.txtNbReservation);
+            this.Controls.Add(this.btnRecherche);
+            this.Controls.Add(this.txtNbFest);
+            this.Controls.Add(this.lblGenreRechercher);
+            this.Controls.Add(this.lblFestRechercher);
+            this.Controls.Add(this.lblNbReservation);
+            this.Controls.Add(this.lblNbFest);
+            this.Controls.Add(this.lblStatistique);
+            this.Controls.Add(this.dgvFest);
+            this.Controls.Add(this.lblTendance);
             this.Controls.Add(this.lblStat);
-            this.Controls.Add(this.lblRecom);
+            this.Controls.Add(this.lblRecommande);
             this.Controls.Add(this.lblFav);
             this.Controls.Add(this.lblFest);
-            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1237, 611);
             this.Name = "JournalDeBord";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Journal de Bord";
             this.Load += new System.EventHandler(this.JournalDeBord_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFav)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRecomm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTendance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,41 +519,41 @@ namespace Projet_GL_Ana_Moreira
         #endregion
 
         private System.Windows.Forms.Label lblFest;
-        private System.Windows.Forms.Label lblRecom;
+        private System.Windows.Forms.Label lblRecommande;
         private System.Windows.Forms.Label lblFav;
         private System.Windows.Forms.Label lblStat;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTendance;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblRecomm;
+        private System.Windows.Forms.DataGridView dgvFest;
+        private System.Windows.Forms.Label lblStatistique;
+        private System.Windows.Forms.Label lblNbFest;
+        private System.Windows.Forms.Label lblNbReservation;
+        private System.Windows.Forms.Label lblFestRechercher;
+        private System.Windows.Forms.Label lblGenreRechercher;
+        private System.Windows.Forms.TextBox txtNbFest;
+        private System.Windows.Forms.Button btnRecherche;
+        private System.Windows.Forms.TextBox txtNbReservation;
+        private System.Windows.Forms.TextBox txtGenreRechercher;
+        private System.Windows.Forms.TextBox txtFestRechercher;
+        private System.Windows.Forms.Button btnSelection;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtFestival;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtPrix;
+        private System.Windows.Forms.DataGridView dgvFav;
+        private System.Windows.Forms.DataGridView dgvRecomm;
+        private System.Windows.Forms.DataGridView dgvTendance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtFestFav;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtDateFav;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtPrixFav;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtFestRecom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtDateRecom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtPrixRecom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtFestTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtDateTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTxtPrixTen;
     }
 }

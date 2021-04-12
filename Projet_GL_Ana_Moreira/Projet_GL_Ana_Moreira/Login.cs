@@ -14,16 +14,12 @@ namespace Projet_GL_Ana_Moreira
     {
         public PageLogin(){
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e){
-          
-
+           
         }
 
         private void btnCreer_Click(object sender, EventArgs e) {
             Form cc = new CreerCompte();
-            cc.Show();
+            cc.ShowDialog();
         }
 
         private void verification() {
@@ -31,12 +27,39 @@ namespace Projet_GL_Ana_Moreira
                 MessageBox.Show("Element manquant", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else {
-                Form pp = new JournalDeBord();
-                pp.Show();
+                this.Hide();
+            
             }
         }
         private void btnConnecter_Click(object sender, EventArgs e) {
             verification();
+          
+        }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+            Focus();
+           
+        }
+
+        private void txtMP_TextChanged(object sender, EventArgs e)
+        {
+            txtMP.PasswordChar = '*';
+        }
+
+        private void PageLogin_Load(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void PageLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing) { Application.Exit();        }
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Projet_GL_Ana_Moreira
         public CreerCompte()
         {
             InitializeComponent();
+            cboCivil.SelectedIndex = 0;
         }
 
         private void CreerCompte_Load(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace Projet_GL_Ana_Moreira
         }
         private void verification(){
 
-            if (txtNom.Text == "" || txtPrenom.Text == "" || txtEmail.Text == "" || txtLogin.Text == "" || txtMP.Text == "" || txtMPConf.Text == "")
+            if (cboCivil.SelectedIndex == 0 || txtNom.Text == "" || txtPrenom.Text == "" || txtEmail.Text == "" || txtLogin.Text == "" || txtMP.Text == "" || txtMPConf.Text == "" || txtAdresse.Text == "" || txtCP.Text == "" || txtPays.Text == "")
             {
                 MessageBox.Show("Element manquant", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -49,14 +50,106 @@ namespace Projet_GL_Ana_Moreira
         private void Creer_Click(object sender, EventArgs e)
         {
             verification();
+            this.Close();
         }
 
         private void btnAnuuler_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Voulez-vous vraiment annuler votre reation de compte", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
+            this.Close();
             Form cc = new PageLogin();
             cc.Show();
+        }
+
+        private void txtMP_TextChanged(object sender, EventArgs e)
+        {
+            txtMP.PasswordChar = '*';
+        }
+
+        private void txtMPConf_TextChanged(object sender, EventArgs e)
+        {
+            txtMPConf.PasswordChar = '*';
+        }
+
+        private void cboCivil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblCP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPays_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCivilie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAdresse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAdresse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPrenom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPays_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPrenom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNom_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

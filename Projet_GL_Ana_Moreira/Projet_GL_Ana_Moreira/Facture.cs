@@ -39,5 +39,31 @@ namespace Projet_GL_Ana_Moreira
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {   //envoyer email modifier la BDD
+            this.Close();
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dtpDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Modifier_Click(object sender, EventArgs e)
+        {
+            Programme p = new Programme();
+            p.Show();
+        }
     }
 }
